@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dasboard Medico</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="vendors/typicons.font/font/typicons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- endinject --> 
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="row" id="proBanner">
+      <div class="col-12">
+      
+          <a href="https://www.bootstrapdash.com/product/celestial-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=free-preview" target="_blank" class="btn download-button purchase-button ml-auto">Upgrade To Pro</a>
+          <i class="typcn typcn-delete-outline" id="bannerClose"></i>
+        </span>
+      </div>
+    </div>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index2.html"><img src="./images/logo.png"  alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center d-none d-lg-flex" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-lg-2">
+           
+            <li class="nav-item  d-none d-lg-flex">
+              <a class="nav-link active" href="#">
+                Estadisticas
+              </a>
+            
+          </ul>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-flex  mr-2">
+              <a class="nav-link" href="#">
+                ayuda
+              </a>
+            </li>
+            <li class="nav-item dropdown d-flex">
+              <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                <i class="typcn typcn-message-typing"></i>
+                <span class="count bg-success">2</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Mensajes</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow">
+                    <h6 class="preview-subject ellipsis font-weight-normal">Daniel 
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      La reunion fue aplazada
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow">
+                    <h6 class="preview-subject ellipsis font-weight-normal">Luis
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Nuevo producto
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow">
+                    <h6 class="preview-subject ellipsis font-weight-normal"> Rodrigo
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      invita a reunirse
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown  d-flex">
+              <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="typcn typcn-bell mr-0"></i>
+                <span class="count bg-danger">2</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Notificaciones</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="typcn typcn-info-large mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">Actualizaciones</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Ahora mismo
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="typcn typcn-cog mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">Configuracion</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Privacidad
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="typcn typcn-user-outline mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">registro</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      hace 2 dias
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle  pl-0 pr-0" href="#" data-toggle="dropdown" id="profileDropdown">
+                <i class="typcn typcn-user-outline mr-0"></i>
+                <span class="nav-profile-name">David</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item">
+                
+                <a href="./pages/samples/login.html">Cerrar Sesion</a>
+                </a>
+               
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+
+
+
+
+      
+
+
+
+
+
+
+
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_settings-panel.html -->
+        <div class="theme-setting-wrapper">
+          <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
+          <div id="theme-settings" class="settings-panel">
+            <i class="settings-close typcn typcn-delete-outline"></i>
+            <p class="settings-heading">SIDEBAR SKINS</p>
+            <div class="sidebar-bg-options" id="sidebar-light-theme">
+              <div class="img-ss rounded-circle bg-light border mr-3"></div>
+              Light
+            </div>
+            <div class="sidebar-bg-options selected" id="sidebar-dark-theme">
+              <div class="img-ss rounded-circle bg-dark border mr-3"></div>
+              Dark
+            </div>
+            <p class="settings-heading mt-2">HEADER SKINS</p>
+            <div class="color-tiles mx-0 px-4">
+              <div class="tiles success"></div>
+              <div class="tiles warning"></div>
+              <div class="tiles danger"></div>
+              <div class="tiles primary"></div>
+              <div class="tiles info"></div>
+              <div class="tiles dark"></div>
+              <div class="tiles default border"></div>
+            </div>
+          </div>
+        </div>
+        <!-- partial -->
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <div class="d-flex sidebar-profile">
+                <div class="sidebar-profile-image">
+                  <img src="images/faces/face33.png" alt="image">
+                  <span class="sidebar-status-indicator"></span>
+                </div>
+                <div class="sidebar-profile-name">
+                  <p class="sidebar-name">
+                    Dr. David Hernandez
+                  </p>
+                  <p class="sidebar-designation">
+                    Bienvenido
+                  </p>
+                </div>
+              </div>
+              <div class="nav-search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Buscar" aria-label="search" aria-describedby="search">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="search">
+                      <i class="typcn typcn-zoom"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="sidebar-menu-title">Menu</p>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="typcn typcn-briefcase menu-icon"></i>
+                <span class="menu-title">Personal Medico</span>
+                <i class="typcn typcn-chevron-right menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="./personal.html">Nuevo Personal</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="">Informacion</a></li>
+                  
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                <i class="typcn typcn-film menu-icon"></i>
+                <span class="menu-title">Citas Medicas</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="./citamedica.html">Nueva Cita</a></li>
+                </ul>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                <i class="typcn typcn-chart-pie-outline menu-icon"></i>
+                <span class="menu-title">Recetas Medicas</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="./resetamedica.html">Nueva Receta</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                <i class="typcn typcn-th-small-outline menu-icon"></i>
+                <span class="menu-title">Pacientes</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="./pacientes.html">Nuevo Paciente</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                <i class="typcn typcn-compass menu-icon"></i>
+                <span class="menu-title">Ordenes Medicas</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="./ordenmedica.html">Nueva orden</a></li>
+                </ul>
+              </div>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+                <i class="typcn typcn-globe-outline menu-icon"></i>
+                <span class="menu-title">Cuenta</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="error">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="./pages/samples/login.html"> Cerrar Sesion </a></li>
+                  
+                </ul>
+              </div>
+            </li>
+            
+          <ul class="sidebar-legend">
+            <li>
+              <p class="sidebar-menu-title">Category</p>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">#Estudios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">#Datos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">#Resultados</a></li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            
+            <!---formulario inicio-->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Nuevo Personal Medico</h1>
+               
+            </div>
+            <div class="card card-custom border-0 p-3">
+              <form>
+                <!-- Nombres -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="primer-nombre" class="form-label">Primer nombre*</label>
+                    <input type="text" class="form-control" id="primer-nombre" placeholder="Primer nombre" required="">
+                  </div>
+                  <div class="col">
+                    <label for="segundo-nombre" class="form-label">Segundo nombre</label>
+                    <input type="text" class="form-control" id="segundo-nombre" placeholder="Segundo nombre">
+                  </div>
+                </div>
+        
+                <!-- Apellidos -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="primer-apellido" class="form-label">Primer apellido*</label>
+                    <input type="text" class="form-control" id="primer-apellido" placeholder="Primer apellido" required="">
+                  </div>
+                  <div class="col">
+                    <label for="segundo-apellido" class="form-label">Segundo apellido</label>
+                    <input type="text" class="form-control" id="segundo-apellido" placeholder="Segundo apellido">
+                  </div>
+                </div>
+        
+                <!-- Documentos -->
+                <div class="mb-3">
+                  <label for="tipo-documento" class="form-label">Tipo de documento*</label>
+                  <select class="form-select" id="tipo-documento" required="">
+                    <option selected="" disabled="">- Seleccionar -</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="PA">Pasaporte</option>
+                  </select>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="numero-documento" class="form-label">No. de Documento*</label>
+                  <input type="text" class="form-control" id="numero-documento" placeholder="Número de Documento" required="">
+                </div>
+        
+                <div class="mb-3">
+                  <label for="numero-registro-medico" class="form-label">Número de Registro Médico</label>
+                  <input type="text" class="form-control" id="numero-registro-medico" placeholder="Número de Registro Médico" required="">
+                </div>
+        
+                <!-- Especialidad -->
+                <div class="mb-3">
+                  <label for="especialidad" class="form-label">Especialidad*</label>
+                  <select class="form-select" id="especialidad" required="">
+                    <option selected="" disabled="">- Seleccionar -</option>
+                    <option value="Medicina General">Medicina General</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Ginecología">Ginecología</option>
+                    <option value="Pediatría">Pediatría</option>
+                    <option value="Psiquiatría">Psiquiatría</option>
+                    <option value="Oftalmología">Oftalmología</option>
+                    <option value="Neurología">Neurología</option>
+                    <option value="Traumatología">Traumatología</option>
+                    <!-- Agregar más especialidades según sea necesario -->
+                  </select>
+                </div>
+        
+                <!-- Residencia -->
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="departamento" class="form-label">Departamento donde reside*</label>
+                    <select class="form-select" id="departamento" required="">
+                      <option selected="" disabled="">- Seleccionar -</option>
+                      <option value="Antioquia">Antioquia</option>
+                      <option value="Bogotá">Bogotá</option>
+                      <option value="Cundinamarca">Cundinamarca</option>
+                      <!-- Agregar más opciones según sea necesario -->
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="ciudad" class="form-label">Ciudad donde reside*</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required="">
+                  </div>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="direccion" class="form-label">Dirección donde reside*</label>
+                  <input type="text" class="form-control" id="direccion" placeholder="Dirección" required="">
+                </div>
+        
+                <!-- Teléfonos -->
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="celular" class="form-label">Celular*</label>
+                    <input type="tel" class="form-control" id="celular" placeholder="Celular" required="">
+                  </div>
+                </div>
+        
+                <!-- Correos Electrónicos -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico*</label>
+                  <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required="">
+                </div>
+                <div class="mb-3">
+                  <label for="confirmar-email" class="form-label">Confirmar Correo Electrónico*</label>
+                  <input type="email" class="form-control" id="confirmar-email" placeholder="confirmar correo@ejemplo.com" required="">
+                </div>
+        
+                <!-- Sexo -->
+                <div class="mb-3">
+                  <label for="sexo" class="form-label">Sexo*</label>
+                  <select class="form-select" id="sexo" required="">
+                    <option selected="" disabled="">- Seleccionar -</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+        
+                <!-- Grupo Sanguíneo -->
+                <div class="mb-3">
+                  <label for="grupo-sanguineo" class="form-label">Grupo Sanguíneo*</label>
+                  <select class="form-select" id="grupo-sanguineo" required="">
+                    <option selected="" disabled="">- Seleccionar -</option>
+                    <option value="A+">A+</option>            
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                  </select>
+                </div>
+        
+                <!-- Adjuntar documento de identidad -->
+                <div class="mb-3">
+                  <label for="documento-identidad" class="form-label">Adjuntar documento de identidad*</label>
+                  <input class="form-control" type="file" id="documento-identidad" accept=".txt,.rtf,.pdf,.doc,.docx,.odt,.ppt,.pptx,.odp,.xls,.xlsx,.ods,.jpg" required="">
+                  <div class="form-text">Máximo 1 fichero, límite de 25 MB, tipos permitidos: txt, rtf, pdf, doc, docx, odt, ppt, pptx, odp, xls, xlsx, ods, jpg.</div>
+                </div>
+        
+                <!-- Autorización de tratamientos de datos -->
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="autorizacion-datos" required="">
+                  <label class="form-check-label" for="autorizacion-datos">Acepto el tratamiento y la Política de Protección de Datos Personales Servicios</label>
+                </div>
+        
+                <!-- Botón de envío -->
+                <button type="submit" class="btn btn-primary">Registrar</button>
+                <a href="./index.html" class="auth-link text-black mb-3">volver</a>
+              </form>
+            </div>
+            <!---fin formulario-->
+             
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com</a> 2020</span>
+              
+            </div>
+          </footer>
+          </div>  <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- base:js -->
+     <!--boostrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!--boostrap-->
+
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+  </body>
+</html>
